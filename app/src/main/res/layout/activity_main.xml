@@ -68,6 +68,9 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:cornerRadius="8dp"
+        android:drawableEnd="@drawable/arrow_right"
+        android:drawableTint="@color/white"
+        android:drawablePadding="4dp"
         app:strokeColor="@color/colorPrimary" />
 
 </LinearLayout>
