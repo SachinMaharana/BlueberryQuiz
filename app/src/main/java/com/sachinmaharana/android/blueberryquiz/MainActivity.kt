@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var nextButton: Button
     private lateinit var questionTextView: TextView
 
-    private var currentIndex = 3
+    private var currentIndex = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,24 +34,32 @@ class MainActivity : AppCompatActivity() {
         nextButton = findViewById(R.id.next_button)
         questionTextView = findViewById(R.id.question_text_view)
 
-
-
         trueButton.setOnClickListener {
-            Toast.makeText(this, R.string.correct_toast, Toast.LENGTH_SHORT).show()
+            checkAnswer(true)
         }
 
         falseButton.setOnClickListener {
-            Toast.makeText(this, R.string.incorrect_toast, Toast.LENGTH_SHORT).show()
+            checkAnswer(false)
         }
 
         nextButton.setOnClickListener {
             currentIndex = (currentIndex + 1) % questionBank.size
-            val questionTextResId = questionBank[currentIndex].textResId
-            questionTextView.setText(questionTextResId)
+            updateQuestion()
         }
+        updateQuestion()
+    }
 
+    private fun updateQuestion() {
         val questionTextResId = questionBank[currentIndex].textResId
         questionTextView.setText(questionTextResId)
+    }
 
+    private fun checkAnswer(userAnswer: Boolean) {
+        val correctAnswer = questionBank[currentIndex].answer
+        val messageResId = when (userAnswer == correctAnswer) {
+            true -> R.string.correct_toast
+            false -> R.string.incorrect_toast
+        }
+        Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show()
     }
 }
