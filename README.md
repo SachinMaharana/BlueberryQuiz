@@ -12,3 +12,5 @@
 * Implemented with Kotlin
 * SplashScreen 
 * Custom Font
+* Material Design Components
+
