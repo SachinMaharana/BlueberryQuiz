@@ -6,6 +6,9 @@
     <color name="black">#000</color>
     <color name="white">#fff</color>
     <color name="splash">#313131</color>
+    <color name="background">#F6FAF0</color>
+
+
 
 
 </resources>
