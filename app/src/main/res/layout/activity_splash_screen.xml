@@ -25,6 +25,7 @@
         android:letterSpacing="0.1"
         android:textColor="@color/black"
         android:textSize="19sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
