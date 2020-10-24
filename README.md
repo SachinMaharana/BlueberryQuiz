@@ -1,6 +1,11 @@
 # Android Blueberry Quiz App
 
-> A basic android project built with kotlin. Work in progress.
+> A basic android project built with kotlin. *Work in progress*.
+
+
+<p align="center">
+  <img src="assets/Blueberry.jpg" alt="Blueberry Quiz" width="250"/>
+</p>
 
 # Features
 
