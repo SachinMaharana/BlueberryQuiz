@@ -1,6 +1,6 @@
 # Android Blueberry Quiz App
 
-> A basic android project built with kotlin. *Work in progress*.
+> A basic android project built with **Kotlin**. *Work in progress*.
 
 
 <p align="center">
