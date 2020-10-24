@@ -15,3 +15,4 @@
 * Material Design Components
 * Icon in a Button
 * viewModel for UI Data(updated dependencies)
+* savedInstanceState for process death
